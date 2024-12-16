@@ -1,12 +1,12 @@
 const express = require("express");
 const dotenv=require("dotenv");
+dotenv.config();
 const connectDB = require("./config/db");
 const app = express();
 const cors = require("cors");
-const PORT = 4000 || process.env.PORT;
+const PORT = process.env.PORT || 8000;
 const {notFound,errorHandler} =require('./middleware/error');
 
-dotenv.config();
 connectDB().then(()=>{
 
 	app.listen(PORT, () => {
