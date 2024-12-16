@@ -216,7 +216,7 @@ const Dashboard = () => {
               }} className='bg-red-500 p-4 hover:bg-red-300'>
                 Log Out
               </Button>
-              <Button onClick={() => navigate('/stats')} className='bg-slate-100 text-black p-4 mx-2'>
+              <Button style={{color:"black"}} onClick={() => navigate('/stats')} className='bg-slate-100 text-black p-4 mx-2'>
                 Stats
               </Button>
               <Button onClick={() => setIsCreateDialogOpen(true)}>
